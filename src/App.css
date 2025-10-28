@@ -1,0 +1,87 @@
+html, body, #root, .app {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background: linear-gradient(135deg, #6db3f2 0%, #1e69de 100%);
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  padding: 50px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  margin-top: 0;
+  text-shadow: 1.5px 2px 7px rgba(0,0,0,0.20);
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 13px;
+  border-radius: 7px 0 0 7px;
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.search-box button {
+  padding: 0 32px;
+  border-radius: 0 7px 7px 0;
+  border: none;
+  background: #fbc02d;
+  font-weight: bold;
+  font-size: 1.03rem;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-box button:hover {
+  background: #ffd54f;
+}
+
+.book-grid {
+  width: 100%;
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 180px); /* match card width */
+  grid-auto-rows: 280px; /* match card height */
+  gap: 28px;
+  justify-content: center;
+  background: transparent;
+}
+
+
+.no-books {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.17rem;
+  padding: 38px 0;
+}
